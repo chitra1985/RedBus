@@ -8,7 +8,7 @@ from cryptography.fernet import Fernet
 
 
 
-myconnect = pymysql.connect(host = '127.0.0.1', user = 'root', passwd = 'MidhHeth@12', db='redbus')
+myconnect = pymysql.connect(host = '127.0.0.1', port = 3306, user = 'root', passwd = 'MidhHeth@12', db='redbus')
 cur = myconnect.cursor()
 cur.execute("use redbus")
 
